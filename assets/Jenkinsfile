@@ -1,0 +1,14 @@
+pipeline {
+	agent {
+        label 'stable && docker && linux && ansible'
+    }
+
+
+ stages {
+        stage("Build") {
+            steps {
+                 echo "Build stage"
+            }
+        }
+    }
+}
